@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#tab-pane{
+  display: flex;
+  height: 100%;
+  width: auto;
+}
+
+
+div.card {
+  display: grid;
+  column-gap: 50px;
+  width: 100%
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 25px;
+}
+
+body {
+  background-image: linear-gradient(120deg, #5eb7eb 0%, #5c71e8    100%);
+
+}
+
+div.hero-body {
+  text-shadow: 2px 2px 5px white;
+/*   margin-bottom: 20px;
+  position: relative;
+  animation: text 1s 1; */
+}
+
+/* .image img{
+  height: 100%;
+  width: 100%;
+} */
+
+
+
+
+/* @keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 15px;
+    margin-bottom: -40px;
+  }
+  85%{
+    margin-bottom: -40px;
+  }
+} */
+

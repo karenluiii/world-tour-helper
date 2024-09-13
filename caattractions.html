@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Canadian Attractions</title>
+  <link href="mexicoattractions.html"/>
+    <link rel="stylesheet" href="caattractions.css">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+ 
+<body>
+  <nav id="navSize" class="navbar is-info">
+    <div class="navbar-brand">
+
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start is-link">
+        <a class="navbar-item" href="index.html">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="index.html">
+            Attractions
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="mexicoattractions.html">
+              Mexico
+            </a>
+            <a class="navbar-item" href="caattractions.html">
+              Canada
+            </a>
+            <a class="navbar-item" href="germanyattractions.html">
+              Germany
+            </a>
+            <a class="navbar-item" href="jpattractions.html">
+              Japan
+            </a>
+            <a class="navbar-item" href="koreaattractions.html">
+              Korea
+            </a>
+            <a class="navbar-item" href="chnattractions.html">
+              China
+            </a>
+
+          </div>
+        </div>
+      </div>
+  </nav>
+  
+  <div class= "header">
+    <h1 class="h1title" >Canadian Attraction Dice</h1>
+  </div>
+  <div class = "container">
+    <section>
+      <p class = "intro">
+      Roll the dice for a random place in Canada we think you should visit! 
+      </p>
+    </br>
+      <button class="roll-button" onclick="doRoll()">
+        Roll!
+      </button>
+      <div class="results">
+        <h2 class=results-name, id="results-name"></h2>
+        <img class="results-img" id="results-img"></img>
+        <p class="results-text" id="results-text"></p>
+      </div>
+      <div>
+       
+    </section>
+  <script src="caattractions.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>World Tour</title>
+  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+  <!-- Bulma Version 0.9.0-->
+  <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Baloo+2&family=Bungee&family=Bungee+Shade&family=Moo+Lah+Lah&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+  <nav id="navSize" class="navbar is-link">
+    <div class="navbar-brand">
+
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start is-link">
+        <a class="navbar-item" href="index.html">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href=index.html">
+            Attractions
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="mexicoattractions.html">
+              Mexico
+            </a>
+            <a class="navbar-item" href="caattractions.html">
+              Canada
+            </a>
+            <a class="navbar-item" href="germanyattractions.html">
+              Germany
+            </a>
+            <a class="navbar-item" href="jpattractions.html">
+              Japan
+            </a>
+            <a class="navbar-item" href="koreattractions.html">
+              Korea
+            </a>
+            <a class="navbar-item" href="chnattractions.html">
+              China
+            </a>
+            
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+  <section class="hero is-small  has-text-centered">
+    <div class="hero-body"> <br>
+      <p class="title is-size-2" id="tourTitle">World Tour Helper</p>
+      <div class="container">
+        <img src="https://c.tenor.com/Il41GOimvMsAAAAd/travel.gif" width="200" height="auto">
+        <br><br><br>
+      </div>
+    </div>
+    <div class="tabs is-boxed is-centered main-menu" id="nav">
+      <ul>
+        <li data-target="pane-1" id="1" class="is-active">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">Mexico</span>
+          </a>
+        </li>
+        <li data-target="pane-2" id="2">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">Canada</span>
+          </a>
+        </li>
+        <li data-target="pane-3" id="3">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">Germany</span>
+          </a>
+        </li>
+        <li data-target="pane-4" id="4">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">Japan</span>
+          </a>
+        </li>
+        <li data-target="pane-5" id="5">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">Korea</span>
+          </a>
+        </li>
+        <li data-target="pane-6" id="6">
+          <a>
+            <span class="icon is-small has-text-black"><i class="fa fa-image"></i></span>
+            <span class="has-text-black">China</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="tab-content">
+
+      <!--tab 1 Mexico -->
+      <div class="tab-pane" id="pane-1">
+        <div class="columns">
+          <!--card 1 for Mexico's top Attractions -->
+          <div class="column">
+            <div id="mx1" class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://www.bakerinstitute.org/sites/default/files/2022-09/GettyImages-1236685080-Mexico%2BFlag-EDITORIAL-2022.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="mexicoattractions.html"> 
+                    <button class="title is-4 has-text-black">Mexico's Top Attractions</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 2 mexican cuisine -->
+        <div class="column">
+          <div id="mx2" class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="https://assets3.thrillist.com/v1/image/3078245/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-4 has-text-black">Mexican Cuisine</p>
+                <p class="subtitle is-6 has-text-black"></p>
+
+                <!--start of button for popup -->
+                  <div id="modal-mexico" class="modal">
+                    <div class="modal-background"></div>
+                    
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title">Recommendations</p>
+                        
+                        <button class="delete" aria-label="close"></button>
+                      </header>
+                      
+                      <section class="modal-card-body">
+                        <!-- Content ... -->
+                        <p class="modal-card-content">
+                        <ul>Tacos</ul>
+                        <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/04/Carne-Asada-Tacos-main-3.jpg" />
+                        <ul>Pozole</ul>
+                        <img src="https://media.istockphoto.com/id/1174042861/photo/mexican-red-pozole-soup-on-wooden-background.jpg?s=612x612&w=0&k=20&c=P5AGzkZk3t_P5uFqYYMjphXogwxdgLnCXnpe8M74Lm8="/>
+                        <ul>Tamales</ul>
+                        <img src="https://www.isabeleats.com/wp-content/uploads/2019/12/chicken-tamales-small-18-500x500.jpg"/>
+                      </p>
+                      </section>
+                      <footer class="modal-card-foot"></footer>
+                    </div>
+                  </div>
+
+                  <!--html for the trigger-->
+                  <button class="js-modal-trigger" data-target="modal-mexico">
+  Learn more
+</button>
+                  <!-- end of button for popup-->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Tab 2 Canada-->
+      <div class="tab-pane" id="pane-2">
+        <div class="columns">
+          <!-- Card 1 Canada-->
+          <div class="column">
+            <div id="ca1" class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toronto_Skyline_Summer_2020.jpg/476px-Toronto_Skyline_Summer_2020.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="caattractions.html"> 
+                      <button class="title is-4 has-text-black">Canada's Top Attractions</button></a>
+                  <p class="subtitle is-6 has-text-black"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 2 Canada-->
+          <div class="column">
+            <div id="ca2" class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://fh-sites.imgix.net/sites/3373/2019/10/03163915/canadaday_blog-840x444.jpg?auto=compress%2Cformat&w=700&h=700&fit=max" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4 has-text-black">Canadian Cuisine </p>
+                  <p class="subtitle is-6 has-text-black"></p>
+  
+                  <!--start of button for popup -->
+                    <div id="modal-canada" class="modal">
+                      <div class="modal-background"></div>
+                      
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Recommendations</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        
+                        <section class="modal-card-body">
+                          <!-- Content ... -->
+                          <p class="modal-card-content"></p>
+                          <ul>Poutine</ul>
+                          <img src="https://www.hostelworld.com/blog/wp-content/uploads/2017/06/Ultimate-Guide-to-Canadian-Food-Poutine-@shannondidwhat.jpg" />
+                          <ul>Bannock</ul>
+                          <img src="https://www.hostelworld.com/blog/wp-content/uploads/2017/06/Ultimate-Guide-to-Canadian-Food-Bannock-@torebergengen.jpg"/>
+                          <ul>Nova Scotian Lobster Rolls</ul>
+                          <img src="https://www.hostelworld.com/blog/wp-content/uploads/2017/06/canadian-foods-lobster-roll_c_neil-conway-flickr.jpg"/>
+                        </section>
+                        <footer class="modal-card-foot"></footer>
+                      </div>
+                    </div>
+  
+                    <!--html for the trigger-->
+                    <button class="js-modal-trigger" data-target="modal-canada">
+    Learn more
+  </button>
+                    <!-- end of button for popup-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tab 3 Germany-->
+      <div class="tab-pane" id="pane-3">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://cdn1.matadornetwork.com/blogs/1/2011/05/Munich-Germany-sunset-cityscape-destinations-1200x900.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="germanyattractions.html"> 
+                      <button class="title is-4 has-text-black">Germany's Top Attractions</button></a>
+                  <p class="subtitle is-6 has-text-black"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://www.halloessen.de/blog/wp-content/uploads/2020/11/tasty-food-in-germany.png" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4 has-text-black">Germany's Cuisine</p>
+                  <p class="subtitle is-6 has-text-black"></p>
+  
+                                  <!--start of button for popup -->
+                    <div id="modal-germany" class="modal">
+                      <div class="modal-background"></div>
+                      
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Best German Cusisine</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        
+                        <section class="modal-card-body">
+                          <!-- Content ... -->
+                          <p class="modal-card-content"></p>
+  
+                          <ul>Schnitzel</ul>
+    <img src="https://www.daringgourmet.com/wp-content/uploads/2014/03/Schnitzel-5.jpg" />
+  
+  <ul>Spaetzle</ul>
+     <img src="https://platedcravings.com/wp-content/uploads/2016/01/German-Spaetzle-Recipe-Plated-Cravings-4-500x500.jpg" /> 
+  
+  <ul>Flammkuchen</ul>
+     <img src="https://www.cookhomey.com/wp-content/uploads/Flammkuchen-Recipe.jpg" /> 
+                          
+  <ul>Currywurst</ul>
+     <img src="https://www.shutterstock.com/image-photo/currywurst-german-curry-sausage-street-600nw-2310986133.jpg" /> 
+  
+  <ul> Bratwurst</ul>
+     <img src="https://www.jacadatravel.com/wp-content/uploads/fly-images/329174/Frankfurt-sausages-648721340-552x310-cc.jpg" /> 
+                          
+  <ul>Königsberger klopse</ul>
+     <img src="https://media.istockphoto.com/id/1889676397/photo/k%C3%B6nigsberger-klopse.jpg?s=612x612&w=0&k=20&c=fE091myAloVl8uvN-7NJeScXrzDg4kawlgfFKiSjgCE=" />                       
+                          
+                        
+                        </section>
+                        <footer class="modal-card-foot"></footer>
+                      </div>
+                    </div>
+  
+                    <!--html for the trigger-->
+                    <button class="js-modal-trigger" data-target="modal-germany">
+    Learn more
+  </button>
+                    <!-- end of button for popup-->
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tab 4 Japan-->
+      <div class="tab-pane" id="pane-4">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://www.planetware.com/wpimages/2020/08/japan-best-cities-tokyo.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="jpattractions.html"> 
+                      <button class="title is-4 has-text-black">Japan's Top Attractions</button></a>
+                  <p class="subtitle is-6 has-text-black"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div id="miso" class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://cdn.tasteatlas.com/images/dishes/3cbb3969462848a19cfbf93573dcf64d.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4 has-text-black">Japanese Cuisine</p>
+                  <p class="subtitle is-6 has-text-black"></p>
+  
+                                  <!--start of button for popup -->
+                    <div id="modal-japan" class="modal">
+                      <div class="modal-background"></div>
+                      
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Food Recommendation</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        
+                        <section class="modal-card-body">
+                          <!-- Content ... -->
+                          <p class="modal-card-content"></p>
+  
+                          <ul>Japanese Curry (Curry raisu)</ul>
+     <img src="https://cdn.tasteatlas.com/images/dishes/3cbb3969462848a19cfbf93573dcf64d.jpg" />        
+                          <ul>Sushi</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-sushi/Blog-page-156-sushi?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Udon</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-udon/Blog-page-156-udon?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Tofu</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-tofu/Blog-page-156-tofu?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Tempura</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-156-tempura/Blog-156-tempura?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Yakitori</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-Yakitori-Grilled-Skewers/Blog-page-156-Yakitori-Grilled-Skewers?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Sashimi</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-sashimi/Blog-page-156-sashimi?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Ramen</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-ramen/Blog-page-156-ramen?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Donburi</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-Oyakodon/Blog-page-156-Oyakodon?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                          <ul>Soba</ul>
+     <img src="https://cdn.media.amplience.net/i/japancentre/Blog-page-156-Zaru-Soba-Chilled-Noodles/Blog-page-156-Zaru-Soba-Chilled-Noodles?$poi$&w=1112&h=782&sm=c&fmt=auto" />        
+                        </section>
+                        <footer class="modal-card-foot"></footer>
+                      </div>
+                    </div>
+  
+                    <!--html for the trigger-->
+                    <button class="js-modal-trigger" data-target="modal-japan">
+    Learn more
+  </button>
+                    <!-- end of button for popup-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tab 5 Korea-->
+      <div class="tab-pane" id="pane-5">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <a href="koreattractions.html">
+                  <figure class="image">
+                    <img src="https://www.jetstar.com/_/media/inspiration-hub/article-images/19feb/sth-korea-seoul-seven-myths/hero_sk_seoul.jpg?rev=d3c09984f5124c728e1180264868f479&w=1050&rc=1&cw=1050&ch=590&cx=55&cy=0&hash=67D254A9C3122C4CCA3E02B9DD2B057B4A67A129" />
+                  </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="koreattractions.html"> 
+                      <button class="title is-4 has-text-black">Korea's Top Attractions</button></a>
+                  <p class="subtitle is-6 has-text-black"></p> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2022/5/19/korean-food-full-width.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4 has-text-black">Korean Cuisine</p>
+                  <p class="subtitle is-6 has-text-black"></p>
+  
+                                  <!--start of button for popup -->
+                    <div id="modal-korea" class="modal">
+                      <div class="modal-background"></div>
+                      
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Recommendations</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        
+                        <section class="modal-card-body">
+                          <!-- Content ... -->
+                        <p class="modal-card-content">                                        <ul>Bibimbap</ul>
+                          <img src="https://a.cdn-hotels.com/gdcs/production12/d29/cc49915a-a856-4e94-9ba4-c7e89a652d2e.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" />
+                          <ul>Red rice cakes (tteokbokki)</ul>
+                          <img src="https://a.cdn-hotels.com/gdcs/production65/d1648/71fa270d-179e-47b5-be14-684ff9b90659.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"/>
+                          <ul>Bulgogi</ul>
+                          <img src="https://a.cdn-hotels.com/gdcs/production103/d73/f5bbab8e-f7fc-4c04-b50a-9900e952910c.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"/>
+                        </p>
+                        </section>
+                        <footer class="modal-card-foot"></footer>
+                      </div>
+                    </div>
+  
+                    <!--html for the trigger-->
+                    <button class="js-modal-trigger" data-target="modal-korea">
+    Learn more
+  </button>
+                    <!-- end of button for popup-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tab 6 China-->
+  
+      <div class="tab-pane" id="pane-6">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <a href="chnattractions.html">
+                  <img src="https://www.planetware.com/photos-large/CHN/guilin-kweilin.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <a href="chnattractions.html"> 
+                      <button class="title is-4 has-text-black">China's Top Attractions</button></a>
+                  <p class="subtitle is-6 has-text-black"></p> </a>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="https://www.honolulumagazine.com/wp-content/uploads/data-import/1080e54f/chinese-food-fook-lam.jpg" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4 has-text-black">Chinese Cuisine</p>
+                  <p class="subtitle is-6 has-text-black"></p>
+  
+                                  <!--start of button for popup -->
+                    <div id="modal-china" class="modal">
+                      <div class="modal-background"></div>
+                      
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Recommendations</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        
+                        <section class="modal-card-body">
+                          <!-- Content ... -->
+                          <p class="modal-card-content">
+                            <ul>Hot Pot</ul>
+                          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/03/18/0/FNK_HOT_POT_AT_HOME_OPENER_H_f_s4x3.jpg.rend.hgtvcom.616.493.suffix/1616107469470.jpeg" />
+                          <ul>Chow Mein</ul>
+                          <img src="https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2019/10/Shrimp-Chow-Mein-15-mini.jpg?fit=1300%2C866&ssl=1"/>
+                          <ul>Sweet and Sour Pork</ul>
+                          <img src="https://cdn.sanity.io/images/2r0kdewr/production/a74218d853325cd635ab2056efa02db0401789eb-1000x563.jpg"/>
+                          <ul>Spring Rolls</ul>
+                          <img src="https://www.recipetineats.com/wp-content/uploads/2017/09/Spring-Rolls-6.jpg"/>
+                        </p>
+                        </section>
+                        <footer class="modal-card-foot"></footer>
+                      </div>
+                    </div>
+  
+                    <!--html for the trigger-->
+                    <button class="js-modal-trigger" data-target="modal-china">
+    Learn more
+  </button>
+                    <!-- end of button for popup-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
